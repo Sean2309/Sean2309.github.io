@@ -342,3 +342,60 @@ ABOUT SECTION
     margin: auto 0;
 }
 
+/* 
+################################
+EXPERIENCE SECTION
+################################
+*/
+
+#experience {
+    /* Adding this relative allows the arrow to show up at the specific section, since its position was defined to be absolute in the beginning */
+    position: relative;
+}
+
+.experience-subtitle {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.article-container {
+    /*
+        display: flex 
+            This tells the big box (article-container) to organise its smaller boxes (articles) in a special way s.t they line up nicely
+        text-align: initial 
+            makes sure the text inside each article starts with the left side, like normal
+        flex-wrap: wrap
+            if too many articles in one row, a new line will be started (same as word wrap)
+        flex-direction: row 
+            big box will put small boxes horizontally (side by side)
+        gap: 2.5rem 
+            makes a bit of space between each article -> only applies to the direct child elements of article-container, which are articles
+        justify-content: space-around
+            makes sure articles are spread evenly inside the big box. puts space around each article so they're not squished together
+    */
+    display: flex;
+    text-align: initial;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+article .icon {
+    cursor: default;
+}
