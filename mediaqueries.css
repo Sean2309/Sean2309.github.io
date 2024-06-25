@@ -42,6 +42,12 @@
     }
 }
 
+@media screen and (max-width:1000px) {
+    .about-containers {
+        flex-wrap: wrap;
+    }
+}
+
 @media screen and (max-width: 600px) {
     #contact, footer {
         height: 40vh;
@@ -61,7 +67,7 @@
         height: fit-content;
         margin-bottom: 2rem;
     }
-    .about-containers, .contact-upper-container, .btn-container {
+    .contact-upper-container, .btn-container {
         flex-wrap: wrap;
     }
     .contact-upper-container {
