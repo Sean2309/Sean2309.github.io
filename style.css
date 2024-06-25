@@ -197,6 +197,16 @@ PROFILE SECTION
     margin: auto 0;
 }
 
+.profile-container {
+    align-items: center;
+}
+
+.profile-pic {
+    clip-path: circle(38%);
+    object-fit: cover;
+    overflow: hidden;
+}
+
 .section__text {
     align-self: center;
     text-align: center;
@@ -223,7 +233,7 @@ PROFILE SECTION
 #socials-container {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
     gap: 1rem;
 }
 
@@ -437,9 +447,58 @@ CONTACT SECTION
 ################################
 */
 
-.contact-container {
+#contact {
+    position: relative;
     display: flex;
-    flex-direction: row;
-    margin: 2rem;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
 }
 
+.contact-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-container p {
+    font-size: larger;
+}
+
+.contact-icon {
+    /* Disabling the clicking off the icon */
+    cursor: default;
+    height: 2rem;
+}
+
+.email-icon {
+    height: 2.5rem;
+}
+
+/* 
+################################
+FOOTER SECTION
+################################
+*/
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
+}
